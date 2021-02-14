@@ -16,47 +16,55 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Make Temporary Results Dir
-        run: mkdir -p results/${GITHUB_RUN_ID}
-      - name: Ensure Branch Directory
-        run: mkdir -p results/saved/${GITHUB_REF}
+        run: mkdir -p results
       - name: Setup Python 3.9
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      #- name: Install dependencies
-      #  python -m pip install --upgrade pip
-      # pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
       - name: Lookup DNS Records
-        run: bin/namecheck.py ${NAMELIST} > results/${GITHUB_RUN_ID}/namecheck.json
-      - name: Store Results
+        run: bin/namecheck.py ${NAMELIST} > results/namecheck.json
+      - name: Store Current Results
         uses: actions/upload-artifact@v2
         with:
-          name: cheeserun-results
-          path: results/saved
+          name: cheeserun-results-${GITHUB_RUN_ID}
+          path: results/
   compare:
     runs-on: ubuntu-latest
     steps:
-      - name: Restore Permanent Results Dir
+      - name: Prepare
+        run: |
+          mkdir results
+          mkdir saved
+      - name: Restore Saved Results
+        continue_on_error: true
         uses: actions/download-artifact@v2
         with:
-          name: cheeserun-results
-          path: results/saved
+          name: cheeserun-saved-${GITHUB_REF}
+          path: saved/
+      - name: Restore Current Results
+        uses: actions/download-artifact@v2
+        with:
+          name: cheeserun-results-${GITHUB_RUN_ID}
+          path: results/
       - name: Compare Results
         run: |
-          for f in $(ls -1 results/${GITHUB_RUN_ID}/ -type f); do
-            diff -uN results/saved/${GITHUB_REF}/${f} results/${GITHUB_RUN_ID}/${f} >> results/${GITHUB_RUN_ID}/changeset.diff 
-            cp results/${GITHUB_RUN_ID}/${f} results/saved/${GITHUB_REF}/${f}
+          for f in $(ls -1 results/ -type f); do
+            diff -uN saved/${f} results/${f} >> results/changeset.diff
           done
-      - name: Store Results
+      - name: Store Current Results as Saved
         uses: actions/upload-artifact@v2
         with:
-          name: cheeserun-results
-          path: results/saved
+          name: cheeserun-saved-${GITHUB_REF}
+          path: saved/
       - name: Report Changes
         run: |
-          if [ -s "results/${GITHUB_RUN_ID}/changeset.diff" ]; then
+          if [ -s "results/changeset.diff" ]; then
             echo "::group::Moved Cheese Report"
-            cat results/${GITHUB_RUN_ID}/changeset.diff
+            cat results/changeset.diff
             echo "::endgroup::"
             exit 1
           fi
