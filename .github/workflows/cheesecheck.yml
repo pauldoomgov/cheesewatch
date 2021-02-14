@@ -40,7 +40,7 @@ jobs:
           mkdir results
           mkdir saved
       - name: Restore Saved Results
-        continue_on_error: true
+        continue-on-error: true
         uses: actions/download-artifact@v2
         with:
           name: cheeserun-saved-${GITHUB_REF}
