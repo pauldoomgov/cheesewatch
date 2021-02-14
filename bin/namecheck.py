@@ -2,7 +2,7 @@
 # Lookup a DNS name and return a consistent sorted result output
 
 import sys
-from dns import resolver, rrset
+from dns import exception, resolver, rrset
 import json
 
 
@@ -21,8 +21,11 @@ out = {}
 for name in sorted(sys.argv[1:]):
     try:
         result = resolver.resolve(name)
-    except resolver.NXDOMAIN as err:
+    except resolver.NXDOMAIN:
         out[name] = [f"No DNS records found for: {name}"]
+        continue
+    except exception.DNSException as err:
+        out[name] = [f"{err}"]
         continue
 
     for rr in result.response.answer:

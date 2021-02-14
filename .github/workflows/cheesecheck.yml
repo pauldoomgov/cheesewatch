@@ -1,0 +1,54 @@
+---
+name: Change Monitor
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "15 * * * *"
+
+env:
+  NAMELIST: "www.login.gov secure.login.gov a.pivcac.prod.login.gov"
+
+jobs:
+  gather:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Make Temporary Results Dir
+        run: mkdir -p results/${GITHUB_RUN_ID}
+      - name: Ensure Branch Directory
+        run: mkdir -p results/saved/${GITHUB_REF}
+      - name: Restore Permanent Results Dir
+        uses: actions/download-artifact@v2
+        with:
+          name: cheeserun-results
+          path: results/saved
+      - name: Setup Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      #- name: Install dependencies
+      #  python -m pip install --upgrade pip
+      # pip install -r requirements.txt
+      - name: Lookup DNS Records
+        run: bin/namecheck.py ${NAMELIST} > results/${GITHUB_RUN_ID}/namecheck.json
+
+      - name: Compare Results
+        run: |
+          for f in $(ls -1 results/${GITHUB_RUN_ID}/ -type f); do
+            diff -uN results/saved/${GITHUB_REF}/${f} results/${GITHUB_RUN_ID}/${f} >> results/${GITHUB_RUN_ID}/changeset.diff 
+            cp results/${GITHUB_RUN_ID}/${f} results/saved/${GITHUB_REF}/${f}
+      - name: Store Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: cheeserun-results
+          path: results/saved
+      - name: Report Changes
+        run: |
+          if [ -s "results/${GITHUB_RUN_ID}/changeset.diff" ]; then
+            echo "::group::Moved Cheese Report"
+            cat results/${GITHUB_RUN_ID}/changeset.diff
+            echo "::endgroup::"
+            exit 1
+          fi
