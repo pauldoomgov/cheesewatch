@@ -1,5 +1,7 @@
 # Cheese Watch - Don't Move The Cheese
 
+![Change Monitor](https://github.com/pauldoomgov/cheesewatch/workflows/Change%20Monitor/badge.svg)
+
 Simple change monitor - Each task is run and the output is
 stored as a GitHub Actions Artifact.  The nest time the task
 is run the new output is compared to the old.
