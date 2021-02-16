@@ -69,7 +69,7 @@ jobs:
           name: cheeserun-saved-${{env.REFSLUG}}
           path: saved/
       - name: Report Changes
-        if: ${{ [ $CHANGED == 1 ] }}
+        if: env.CHANGED
         run: |
           echo "::group::Moved Cheese Report"
           cat changeset.diff
