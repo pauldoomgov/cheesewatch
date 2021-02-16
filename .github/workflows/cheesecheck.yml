@@ -40,6 +40,8 @@ jobs:
   compare:
     needs: runchecks
     runs-on: ubuntu-latest
+    env:
+      CHANGED: 0
     steps:
       - uses: rlespinasse/github-slug-action@v3.x
       - name: Set Consistent REFSLUG
@@ -67,9 +69,8 @@ jobs:
           name: cheeserun-saved-${{env.REFSLUG}}
           path: saved/
       - name: Report Changes
+        if: ${{ [ $CHANGED == 1 ] }}
         run: |
-          if [[ -v $CHANGED ]]; then
-            echo "::group::Moved Cheese Report"
-            cat changeset.diff
-            echo "::endgroup::"
-          fi
+          echo "::group::Moved Cheese Report"
+          cat changeset.diff
+          echo "::endgroup::"
