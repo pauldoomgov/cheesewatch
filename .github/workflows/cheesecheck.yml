@@ -60,7 +60,7 @@ jobs:
           name: cheeserun-results-${{github.run_id}}
           path: results/
       - name: Compare Results
-        run: git diff --no-index saved/ results/
+        run: git diff --no-index saved/ results/ >> changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
       - name: Store Current Results as Saved
         uses: actions/upload-artifact@v2
         with:
@@ -68,11 +68,8 @@ jobs:
           path: saved/
       - name: Report Changes
         run: |
-          if [ -s "changeset.diff" ]; then
+          if [[ -v $CHANGED ]]; then
             echo "::group::Moved Cheese Report"
             cat changeset.diff
             echo "::endgroup::"
-            echo "CHANGED=1" >> $GITHUB_ENV
-          else
-            echo "CHANGED=0" >> $GITHUB_ENV
           fi
