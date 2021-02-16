@@ -61,7 +61,7 @@ jobs:
           path: results/
       - name: Compare Results
         run: |
-          for f in $(ls -1 results/ -type f); do
+          for f in $(ls -1 results/); do
             diff -uN saved/${f} results/${f} >> results/changeset.diff
           done
       - name: Store Current Results as Saved
