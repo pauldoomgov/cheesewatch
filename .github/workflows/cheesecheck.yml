@@ -60,7 +60,7 @@ jobs:
           name: cheeserun-results-${{github.run_id}}
           path: results/
       - name: Compare Results
-        run: git diff --no-index saved/ results/ >> changeset.diff
+        run: git diff --no-index saved/ results/
       - name: Store Current Results as Saved
         uses: actions/upload-artifact@v2
         with:
