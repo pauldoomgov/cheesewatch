@@ -62,7 +62,7 @@ jobs:
       - name: Compare Results
         run: |
           for f in $(ls -1 results/); do
-            diff -uN saved/${f} results/${f} >> results/changeset.diff
+            git diff --exit-code saved/${f} results/${f} >> results/changeset.diff
           done
       - name: Store Current Results as Saved
         uses: actions/upload-artifact@v2
