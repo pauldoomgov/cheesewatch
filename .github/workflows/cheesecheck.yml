@@ -30,7 +30,7 @@ jobs:
       - name: Store Current Results
         uses: actions/upload-artifact@v2
         with:
-          name: cheeserun-results-${{GITHUB_RUN_ID}}
+          name: cheeserun-results-${{env.GITHUB_RUN_ID}}
           path: results/
   compare:
     runs-on: ubuntu-latest
@@ -51,7 +51,7 @@ jobs:
       - name: Restore Current Results
         uses: actions/download-artifact@v2
         with:
-          name: cheeserun-results-${{GITHUB_RUN_ID}}
+          name: cheeserun-results-${{env.GITHUB_RUN_ID}}
           path: results/
       - name: Compare Results
         run: |
