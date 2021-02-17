@@ -8,7 +8,7 @@ on:
     - cron: "15 * * * *"
 
 env:
-  NAMELIST: "www.login.gov secure.login.gov a.pivcac.prod.login.gov"
+  NAMECHECK_LIST: ${{ secrets.NAMECHECK_LIST }}
 
 jobs:
   runchecks:
@@ -28,7 +28,7 @@ jobs:
 
       ### START CHECKS
       - name: Lookup DNS Records
-        run: bin/namecheck.py ${NAMELIST} > results/namecheck.json
+        run: bin/namecheck.py ${NAMECHECK_LIST} > results/namecheck.json
       ### END CHECKS
 
       - name: Store Current Results
@@ -67,10 +67,26 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: cheeserun-saved-${{env.REFSLUG}}
-          path: saved/
-      - name: Report Changes
+          path: results/
+      - name: Change Report
         if: env.CHANGED
         run: |
-          echo "::group::Moved Cheese Report"
           cat changeset.diff
-          echo "::endgroup::"
+          echo "::set-output name=changeset::$(cat changeset.diff)"
+      - name: Slack Changes
+        # Requires SLACK_WEBHOOK_URL and SLACK_CHANNEL secrets to be
+        # set.  See
+        if: env.CHANGED && github.ref == 'refs/heads/main'
+        uses: edge/simple-slack-notify@master
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          username: "CheeseWatch"
+          channel: ${{ secrets.SLACK_CHANNEL }}
+          color: "danger"
+          text: "The cheese has moved..."
+          fields: |
+            [
+              {"title": "Run", "value": "${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}"},
+              {"title": "Change", "value": "${outputs.changeset"}
+            ]

@@ -19,4 +19,3 @@ Keep the mouse happy.
 ## Local Testing
 
 Use `act` - https://github.com/nektos/act
-
