@@ -35,6 +35,12 @@ don't include time or other things that change, etc.
 
 Keep the mouse happy.
 
+## Modifying
+
+Remember that Cheese Watch modifies its own repo as it makes checks.
+Pull a fresh copy of the branch you wish to modify before committing
+changes.
+
 ## Local Testing
 
 Use `act` - https://github.com/nektos/act

@@ -62,10 +62,13 @@ jobs:
         if: env.CHANGED == 1
         uses: actions-x/commit@v2
       - name: Output Change Report
+        id: changeset
         if: env.CHANGED == 1
         run: |
           cat temp/changeset.diff
-          echo "::set-output name=changeset::$(cat temp/changeset.diff)"
+          echo "CHANGESET<<EOF" >> $GITHUB_ENV
+          echo "$( cat temp/changeset.diff )" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
       - name: Slack Changes
         # Requires SLACK_WEBHOOK_URL and SLACK_CHANNEL secrets to be
         # set.
@@ -81,5 +84,5 @@ jobs:
           fields: |
             [
               {"title": "Run", "value": "${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}"},
-              {"title": "Change", "value": "${outputs.changeset}"}
+              {"title": "Change", "value": "${{ env.CHANGESET }}"}
             ]
