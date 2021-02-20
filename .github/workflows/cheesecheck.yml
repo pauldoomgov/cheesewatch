@@ -54,10 +54,8 @@ jobs:
       - name: Overwrite Saved Results
         run: |
           rm -rf results/*
-          cp -r temp/ results
-          ls temp/
-          ls results/
-          git add results
+          cp -r temp/* results/
+          git add -A results
       - name: Compare Results
         run: git diff --exit-code --staged results/ >> temp/changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
       - name: Commit and Push Changes
