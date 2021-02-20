@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Make Temporary Results Dir
-        run: mkdir -p results
+        run: mkdir -p temp
       - name: Setup Python 3
         uses: actions/setup-python@v2
         with:
@@ -28,14 +28,14 @@ jobs:
 
       ### START CHECKS
       - name: Lookup DNS Records
-        run: bin/namecheck.py ${NAMECHECK_LIST} > results/namecheck.json
+        run: bin/namecheck.py ${NAMECHECK_LIST} > temp/namecheck.json
       ### END CHECKS
 
       - name: Store Current Results
         uses: actions/upload-artifact@v2
         with:
           name: cheeserun-results-${{github.run_id}}
-          path: results/
+          path: temp/
 
   compare:
     needs: runchecks
@@ -43,32 +43,27 @@ jobs:
     env:
       CHANGED: 0
     steps:
-      - uses: rlespinasse/github-slug-action@v3.x
-      - name: Set Consistent REFSLUG
-        run: echo "REFSLUG=${GITHUB_REF_SLUG:-unknown}" >> $GITHUB_ENV
-      - name: Prepare
-        run: |
-          mkdir results
-          mkdir saved
-      - name: Restore Saved Results
-        continue-on-error: true
-        uses: actions/download-artifact@v2
+      - uses: actions/checkout@v2
         with:
-          name: cheeserun-saved-${{env.REFSLUG}}
-          path: saved/
-      - name: Restore Current Results
+          ref: ${{ github.head_ref }}
+      # - name: Make Temporary Results Dir
+      #   run: mkdir -p temp
+      - name: Restore Latest Results
         uses: actions/download-artifact@v2
         with:
           name: cheeserun-results-${{github.run_id}}
-          path: results/
+          path: temp/
+      - name: Overwrite Saved Results
+        run: |
+          rm -rf results/*
+          cp -r temp/ results/
+          git add results/
       - name: Compare Results
-        run: git diff --no-index saved/ results/ >> changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
-      - name: Store Current Results as Saved
-        uses: actions/upload-artifact@v2
-        with:
-          name: cheeserun-saved-${{env.REFSLUG}}
-          path: results/
-      - name: Change Report
+        run: git diff --staged results/ >> changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
+      - name: Commit and Push Changes
+        if: env.CHANGED
+        uses: actions-x/commit@v2
+      - name: Output Change Report
         if: env.CHANGED
         run: |
           cat changeset.diff
