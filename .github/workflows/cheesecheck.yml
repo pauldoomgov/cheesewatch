@@ -46,8 +46,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.head_ref }}
-      # - name: Make Temporary Results Dir
-      #   run: mkdir -p temp
       - name: Restore Latest Results
         uses: actions/download-artifact@v2
         with:
@@ -57,6 +55,8 @@ jobs:
         run: |
           rm -rf results/*
           cp -r temp/ results
+          ls temp/
+          ls results/
           git add results
       - name: Compare Results
         run: git diff --exit-code --staged results/ >> temp/changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
