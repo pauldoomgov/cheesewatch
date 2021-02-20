@@ -1,6 +1,6 @@
 # Cheese Watch - Don't Move The Cheese
 
-![Change Monitor](https://github.com/pauldoomgov/cheesewatch/workflows/Change%20Monitor/badge.svg)
+![Global Cheese Positioning System](https://github.com/pauldoomgov/cheesewatch/workflows/Global%20Cheese%20Positioning%20System/badge.svg)
 
 
 ![Mouse minding its cheese](misc/mouse-with-cheese.png)
@@ -9,8 +9,9 @@ Simple public information change monitor - Each task is run and
 the output is stored under the `results/` directory in the repo.
 The nest time the tasks are run the new output is compared to the old.
 
-If the result is different, notifications are sent.   The next time
-the job runs it will expect whatever was returned last time.
+If the result is different, the mouse gets very angry and notifications
+are sent.   The next time the job runs it will expect whatever was returned
+last time.
 
 ## Security and Privacy
 
