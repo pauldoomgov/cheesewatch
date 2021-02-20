@@ -56,32 +56,32 @@ jobs:
       - name: Overwrite Saved Results
         run: |
           rm -rf results/*
-          cp -r temp/ results/
-          git add results/
+          cp -r temp/ results
+          git add results
       - name: Compare Results
         run: git diff --exit-code --staged results/ >> temp/changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
       - name: Commit and Push Changes
-        if: env.CHANGED
+        if: env.CHANGED == 1
         uses: actions-x/commit@v2
       - name: Output Change Report
-        if: env.CHANGED
+        if: env.CHANGED == 1
         run: |
           cat temp/changeset.diff
           echo "::set-output name=changeset::$(cat temp/changeset.diff)"
-      - name: Slack Changes
-        # Requires SLACK_WEBHOOK_URL and SLACK_CHANNEL secrets to be
-        # set.  See
-        if: env.CHANGED && github.ref == 'refs/heads/main'
-        uses: edge/simple-slack-notify@master
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        with:
-          username: "CheeseWatch"
-          channel: ${{ secrets.SLACK_CHANNEL }}
-          color: "danger"
-          text: "The cheese has moved..."
-          fields: |
-            [
-              {"title": "Run", "value": "${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}"},
-              {"title": "Change", "value": "${outputs.changeset}"}
-            ]
+      # - name: Slack Changes
+      #   # Requires SLACK_WEBHOOK_URL and SLACK_CHANNEL secrets to be
+      #   # set.
+      #   if: env.CHANGED && github.ref == 'refs/heads/main'
+      #   uses: edge/simple-slack-notify@master
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      #   with:
+      #     username: "CheeseWatch"
+      #     channel: ${{ secrets.SLACK_CHANNEL }}
+      #     color: "danger"
+      #     text: "The cheese has moved..."
+      #     fields: |
+      #       [
+      #         {"title": "Run", "value": "${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}"},
+      #         {"title": "Change", "value": "${outputs.changeset}"}
+      #       ]
