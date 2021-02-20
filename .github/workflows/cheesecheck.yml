@@ -59,15 +59,15 @@ jobs:
           cp -r temp/ results/
           git add results/
       - name: Compare Results
-        run: git diff --staged results/ >> changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
+        run: git diff --exit-code --staged results/ >> temp/changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
       - name: Commit and Push Changes
         if: env.CHANGED
         uses: actions-x/commit@v2
       - name: Output Change Report
         if: env.CHANGED
         run: |
-          cat changeset.diff
-          echo "::set-output name=changeset::$(cat changeset.diff)"
+          cat temp/changeset.diff
+          echo "::set-output name=changeset::$(cat temp/changeset.diff)"
       - name: Slack Changes
         # Requires SLACK_WEBHOOK_URL and SLACK_CHANNEL secrets to be
         # set.  See
@@ -83,5 +83,5 @@ jobs:
           fields: |
             [
               {"title": "Run", "value": "${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}"},
-              {"title": "Change", "value": "${outputs.changeset"}
+              {"title": "Change", "value": "${outputs.changeset}"}
             ]
