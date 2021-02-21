@@ -82,5 +82,5 @@ jobs:
           fields: |
             [
               {"title": "Run", "value": "${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}"},
-              {"title": "Change", "value": "${{ env.CHANGESET }}"}
+              {"title": "Change", "value": ${{ env.CHANGESET }}}
             ]
