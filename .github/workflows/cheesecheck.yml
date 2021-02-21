@@ -66,7 +66,7 @@ jobs:
         if: env.CHANGED == 1
         run: |
           cat temp/changeset.diff
-          echo "CHANGESET=\"$(cat temp/changeset.diff | sed 's/\"/\\\"/g' | awk -v ORS='\\\\n' '1')\"" >> $GITHUB_ENV
+          echo "CHANGESET=\"$(cat temp/changeset.diff | sed 's/\"/\\\"/g'\"" >> $GITHUB_ENV
       - name: Slack Changes
         # Requires SLACK_WEBHOOK_URL and SLACK_CHANNEL secrets to be
         # set.
@@ -82,5 +82,5 @@ jobs:
           fields: |
             [
               {"title": "Run", "value": "${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}"},
-              {"title": "Change", "value": "${{ env.CHANGESET }}"}
+              {"title": "Change", "value": ${{ env.CHANGESET }}}
             ]
