@@ -78,4 +78,4 @@ jobs:
           username: "CheeseWatch"
           channel: ${{ secrets.SLACK_CHANNEL }}
           color: "danger"
-          text: "The cheese has moved!  See: ${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}/commit/${{ env.COMMITID }}"
+          text: "The cheese has moved!  See: https://github.com/${{ github.repository }}/commit/${{ env.COMMITID }}"
