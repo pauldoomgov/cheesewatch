@@ -66,7 +66,7 @@ jobs:
         if: env.CHANGED == 1
         run: |
           cat temp/changeset.diff
-          echo "CHANGESET=$(cat temp/changeset.diff | jq -rRs '.|tojson')" >> $GITHUB_ENV
+          echo "COMMITID=$(git rev-parse HEAD)" >> $GITHUB_ENV
       - name: Slack Changes
         # Requires SLACK_WEBHOOK_URL and SLACK_CHANNEL secrets to be
         # set.
@@ -78,4 +78,4 @@ jobs:
           username: "CheeseWatch"
           channel: ${{ secrets.SLACK_CHANNEL }}
           color: "danger"
-          text: "The cheese has moved...\\n\\n```${{ env.CHANGESET }}```"
+          text: "The cheese has moved!  See: ${{ env.GITHUB_SERVER_URL }}/${{ env.GITHUB_REPOSITORY }}/commit/${{ env.COMMITID }}"
