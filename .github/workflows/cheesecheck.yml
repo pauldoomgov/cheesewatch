@@ -78,4 +78,4 @@ jobs:
           username: "CheeseWatch"
           channel: ${{ secrets.SLACK_CHANNEL }}
           color: "danger"
-          text: "The cheese has moved...\n\n```${{ env.CHANGESET }}```"
+          text: "The cheese has moved...\\n\\n```${{ env.CHANGESET }}```"
