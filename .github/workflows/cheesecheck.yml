@@ -8,7 +8,8 @@ on:
     - cron: "15 * * * *"
 
 env:
-  NAMECHECK_LIST: ${{ secrets.NAMECHECK_LIST }}
+  # Arguments for checks should be set here and are public
+  NAMECHECK_LIST: "secure.login.gov idp.staging.login.gov a.pivcac.prod.login.gov a.pivcac.staging.login.gov"
 
 jobs:
   runchecks:
