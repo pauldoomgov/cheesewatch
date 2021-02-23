@@ -31,7 +31,7 @@ jobs:
       - name: Lookup DNS Records
         run: bin/namecheck.py ${NAMELIST} > temp/namecheck.json
       - name: Gather TLS Certificate Chains
-        run: bin/certcheck.py ${NAMELISE} > temp/certcheck.json
+        run: bin/certcheck.py ${NAMELIST} > temp/certcheck.json
       ### END CHECKS
 
       - name: Store Current Results
