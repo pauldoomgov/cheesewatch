@@ -46,6 +46,19 @@
             }
         }
     },
+    "login.gov": {
+        "expiration": "2021-05-08T18:31:09",
+        "chain": {
+            "/CN=login.gov": {
+                "serial": 429481862604636672197268444242248662238771,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/C=US/O=Let's Encrypt/CN=R3": {
+                "serial": 85078157426496920958827089468591623647,
+                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
+            }
+        }
+    },
     "secure.login.gov": {
         "expiration": "2021-11-09T12:00:00",
         "chain": {
