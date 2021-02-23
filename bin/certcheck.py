@@ -44,7 +44,8 @@ def nice_subject(cert_subject):
     return "'".join(cert_subject.__str__().split("'")[1:-1])
 
 
-def enumerate_cert_chain(sock, chain={}):
+def enumerate_cert_chain(sock):
+    chain = {}
     for cert in sock.get_peer_cert_chain():
         subject = nice_subject(cert.get_subject())
         chain[subject] = {
