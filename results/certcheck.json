@@ -1,0 +1,162 @@
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_cmp', '_name', '_owner', 'der', 'get_components', 'hash']
+{
+    "a.pivcac.prod.login.gov": {
+        "expiration": "2021-04-25T23:26:14",
+        "chain": {
+            "/CN=*.pivcac.prod.login.gov": {
+                "serial": 341308331966517402901534848999270634531586,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/C=US/O=Let's Encrypt/CN=R3": {
+                "serial": 85078157426496920958827089468591623647,
+                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
+            },
+            "/CN=*.pivcac.staging.login.gov": {
+                "serial": 330872931742768523382256041471742606673208,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/CN=idp.staging.login.gov": {
+                "serial": 13413537462861299213129427843899053146,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
+            },
+            "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon": {
+                "serial": 144918209630989264145272943054026349679957517,
+                "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
+            },
+            "/C=US/O=Amazon/CN=Amazon Root CA 1": {
+                "serial": 144918191876577076464031512351042010504348870,
+                "issuer": "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2"
+            },
+            "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2": {
+                "serial": 12037640545166866303,
+                "issuer": "/C=US/O=Starfield Technologies, Inc./OU=Starfield Class 2 Certification Authority"
+            },
+            "/CN=secure.login.gov": {
+                "serial": 4908574789373105123195992261021730931,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
+            }
+        }
+    },
+    "a.pivcac.staging.login.gov": {
+        "expiration": "2021-04-24T23:27:50",
+        "chain": {
+            "/CN=*.pivcac.prod.login.gov": {
+                "serial": 341308331966517402901534848999270634531586,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/C=US/O=Let's Encrypt/CN=R3": {
+                "serial": 85078157426496920958827089468591623647,
+                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
+            },
+            "/CN=*.pivcac.staging.login.gov": {
+                "serial": 330872931742768523382256041471742606673208,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/CN=idp.staging.login.gov": {
+                "serial": 13413537462861299213129427843899053146,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
+            },
+            "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon": {
+                "serial": 144918209630989264145272943054026349679957517,
+                "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
+            },
+            "/C=US/O=Amazon/CN=Amazon Root CA 1": {
+                "serial": 144918191876577076464031512351042010504348870,
+                "issuer": "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2"
+            },
+            "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2": {
+                "serial": 12037640545166866303,
+                "issuer": "/C=US/O=Starfield Technologies, Inc./OU=Starfield Class 2 Certification Authority"
+            },
+            "/CN=secure.login.gov": {
+                "serial": 4908574789373105123195992261021730931,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
+            }
+        }
+    },
+    "idp.staging.login.gov": {
+        "expiration": "2021-11-06T12:00:00",
+        "chain": {
+            "/CN=*.pivcac.prod.login.gov": {
+                "serial": 341308331966517402901534848999270634531586,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/C=US/O=Let's Encrypt/CN=R3": {
+                "serial": 85078157426496920958827089468591623647,
+                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
+            },
+            "/CN=*.pivcac.staging.login.gov": {
+                "serial": 330872931742768523382256041471742606673208,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/CN=idp.staging.login.gov": {
+                "serial": 13413537462861299213129427843899053146,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
+            },
+            "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon": {
+                "serial": 144918209630989264145272943054026349679957517,
+                "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
+            },
+            "/C=US/O=Amazon/CN=Amazon Root CA 1": {
+                "serial": 144918191876577076464031512351042010504348870,
+                "issuer": "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2"
+            },
+            "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2": {
+                "serial": 12037640545166866303,
+                "issuer": "/C=US/O=Starfield Technologies, Inc./OU=Starfield Class 2 Certification Authority"
+            },
+            "/CN=secure.login.gov": {
+                "serial": 4908574789373105123195992261021730931,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
+            }
+        }
+    },
+    "secure.login.gov": {
+        "expiration": "2021-11-09T12:00:00",
+        "chain": {
+            "/CN=*.pivcac.prod.login.gov": {
+                "serial": 341308331966517402901534848999270634531586,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/C=US/O=Let's Encrypt/CN=R3": {
+                "serial": 85078157426496920958827089468591623647,
+                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
+            },
+            "/CN=*.pivcac.staging.login.gov": {
+                "serial": 330872931742768523382256041471742606673208,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R3"
+            },
+            "/CN=idp.staging.login.gov": {
+                "serial": 13413537462861299213129427843899053146,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
+            },
+            "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon": {
+                "serial": 144918209630989264145272943054026349679957517,
+                "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
+            },
+            "/C=US/O=Amazon/CN=Amazon Root CA 1": {
+                "serial": 144918191876577076464031512351042010504348870,
+                "issuer": "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2"
+            },
+            "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2": {
+                "serial": 12037640545166866303,
+                "issuer": "/C=US/O=Starfield Technologies, Inc./OU=Starfield Class 2 Certification Authority"
+            },
+            "/CN=secure.login.gov": {
+                "serial": 4908574789373105123195992261021730931,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
+            }
+        }
+    }
+}
