@@ -6,8 +6,7 @@ import datetime
 import socket
 import sys
 import json
-import requests
-from OpenSSL import SSL, crypto
+from OpenSSL import SSL
 
 
 @contextlib.contextmanager
