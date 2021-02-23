@@ -14,8 +14,9 @@ def open_tls_socket(hostname):
     port = 443
     if ":" in hostname:
         (hostname, port) = hostname.split(":")
+        port = int(port)
 
-    context = SSL.Context(method=SSL.TLSv1_METHOD)
+    context = SSL.Context(method=SSL.TLSv1_2_METHOD)
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock = SSL.Connection(context=context, socket=sock)
     sock.settimeout(5)
@@ -26,7 +27,14 @@ def open_tls_socket(hostname):
         sock.do_handshake()
 
         yield sock
-
+    except SSL.Error as exc:
+        sys.stderr.write(f"ERROR: Failed to negotiate TLS with {hostname}:{port}\n")
+        raise exc
+    except OSError as exc:
+        sys.stderr.write(
+            f"ERROR: Failed to resolve or connect with {hostname}:{port}\n"
+        )
+        raise exc
     finally:
         sock.shutdown()
         sock.close()
