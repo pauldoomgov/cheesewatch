@@ -51,7 +51,6 @@ def enumerate_cert_chain(sock, chain={}):
             "serial": cert.get_serial_number(),
             "issuer": nice_subject(cert.get_issuer()),
         }
-        print(dir(cert.get_issuer()))
 
     return chain
 
