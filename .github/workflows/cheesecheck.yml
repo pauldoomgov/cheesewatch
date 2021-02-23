@@ -10,7 +10,7 @@ on:
 env:
   # Arguments for checks should be set here and are public
   NAMELIST: "secure.login.gov idp.staging.login.gov a.pivcac.prod.login.gov a.pivcac.staging.login.gov"
-  CERTLIST: "secure.login.gov idp.staging.login.gov a.pivcac.prod.login.gov a.pivcac.staging.login.gov login.gov"
+  CERTLIST: "secure.login.gov idp.staging.login.gov a.pivcac.prod.login.gov a.pivcac.staging.login.gov login.gov www.login.gov"
 
 jobs:
   runchecks:
