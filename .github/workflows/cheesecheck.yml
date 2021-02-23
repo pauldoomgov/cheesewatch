@@ -10,6 +10,7 @@ on:
 env:
   # Arguments for checks should be set here and are public
   NAMELIST: "secure.login.gov idp.staging.login.gov a.pivcac.prod.login.gov a.pivcac.staging.login.gov"
+  CERTLIST: "secure.login.gov idp.staging.login.gov a.pivcac.prod.login.gov a.pivcac.staging.login.gov login.gov"
 
 jobs:
   runchecks:
@@ -31,7 +32,7 @@ jobs:
       - name: Lookup DNS Records
         run: bin/namecheck.py ${NAMELIST} > temp/namecheck.json
       - name: Gather TLS Certificate Chains
-        run: bin/certcheck.py ${NAMELIST} > temp/certcheck.json
+        run: bin/certcheck.py ${CERTLIST} > temp/certcheck.json
       ### END CHECKS
 
       - name: Store Current Results
