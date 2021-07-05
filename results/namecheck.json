@@ -1,12 +1,6 @@
 {
     "a.pivcac.prod.login.gov": [
-        [
-            "a.pivcac.prod.login.gov. 0 IN CNAME prod-pivcac-594195768.us-west-2.elb.amazonaws.com."
-        ],
-        [
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 35.80.101.194",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 54.200.7.132"
-        ]
+        "The DNS operation timed out after 5.401690483093262 seconds"
     ],
     "a.pivcac.staging.login.gov": [
         [
