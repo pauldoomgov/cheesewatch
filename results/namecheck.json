@@ -23,7 +23,8 @@
         ],
         [
             "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 34.218.89.224",
-            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 44.230.31.66"
+            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 44.230.31.66",
+            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 44.238.71.124"
         ]
     ],
     "secure.login.gov": [
