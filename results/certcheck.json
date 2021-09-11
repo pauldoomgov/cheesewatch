@@ -93,10 +93,10 @@
         }
     },
     "secure.login.gov": {
-        "expiration": "2021-11-09T12:00:00",
+        "expiration": "2022-10-10T23:59:59",
         "chain": {
             "/CN=secure.login.gov": {
-                "serial": 4908574789373105123195992261021730931,
+                "serial": 19746360554328326268192671210617366886,
                 "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
             },
             "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon": {
