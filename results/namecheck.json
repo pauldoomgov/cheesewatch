@@ -31,8 +31,8 @@
             "secure.login.gov. 0 IN CNAME login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com."
         ],
         [
+            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 44.240.115.188",
             "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 52.10.191.1",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 54.148.226.102",
             "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 54.187.137.255"
         ]
     ]
