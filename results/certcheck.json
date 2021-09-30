@@ -1,35 +1,27 @@
 {
     "a.pivcac.prod.login.gov": {
-        "expiration": "2021-12-22T03:27:47",
+        "expiration": "2021-12-29T20:09:41",
         "chain": {
             "/CN=*.pivcac.prod.login.gov": {
-                "serial": 271731952377248139336885811251487601087969,
+                "serial": 286442464850378986658792011920334357693536,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
                 "serial": 192961496339968674994309121183282847578,
                 "issuer": "/C=US/O=Internet Security Research Group/CN=ISRG Root X1"
-            },
-            "/C=US/O=Internet Security Research Group/CN=ISRG Root X1": {
-                "serial": 85078200265644417569109389142156118711,
-                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
             }
         }
     },
     "a.pivcac.staging.login.gov": {
-        "expiration": "2021-12-21T09:19:07",
+        "expiration": "2021-12-29T19:29:09",
         "chain": {
             "/CN=*.pivcac.staging.login.gov": {
-                "serial": 299368958583344802878489656655225250886066,
+                "serial": 412731532862144243322076434783191795373610,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
                 "serial": 192961496339968674994309121183282847578,
                 "issuer": "/C=US/O=Internet Security Research Group/CN=ISRG Root X1"
-            },
-            "/C=US/O=Internet Security Research Group/CN=ISRG Root X1": {
-                "serial": 85078200265644417569109389142156118711,
-                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
             }
         }
     },
