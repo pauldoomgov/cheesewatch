@@ -59,6 +59,44 @@ changes.
 
 Commit, push, and watch Github Actions.
 
+## CHECKS
+
+### namecheck
+
+`namecheck.py` takes a list of FQDNs (Fully Qualified Domain Names) and returns
+the current IP addresses for those names.   CNAME records are resolved to A records.
+
+What is this good for?
+* Monitoring dynamic IPs for services like AWS Application Load Balancer which change over
+  time due to maintenance
+* Making sure certain names always resolve
+
+### certcheck
+
+`certcheck.py` takes a list of FDQNs (with optional `:PORT`) and fetches the TLS
+certificate from the server:port, returning expiration and the chain of trust.
+
+What is this good for?
+* Monitoring automatically updated certificates from providers like Let's Encrypt
+  or AWS ACM
+* Keeping track of TLS certificate changes that may relate to sudden problems
+
+#### dnsseccheck
+
+`dnsseccheck.py` takes a list of DNS zone names and returns the DNSKEY records and
+DS (trust anchor) records for each.  DS records are checked to ensure each refers
+to an available DNSKEY and has a correct digest value.
+
+What is this good for?
+* Ensuring proper DNSSEC records exist
+* Keeping an eye on activities like KSK (Key Signing Key) rotations
+
+Note that `dnsseccheck.py` uses `etc/insecure-resolv.conf` to override
+DNS resolver settings.   This allows it to bypass DNSSEC validation which could
+interfere with some lookups.   Quad9's 9.9.9.10 insecure resolver is used
+for this purpose.  Update `etc/insecure-resolv.conf` to use an alternate
+resolver if desired, and kids: NEVER use an insecure resolver for normal use!
+
 ## Security and Privacy
 
 All information monitored by CheeseWatch must be **public** and
