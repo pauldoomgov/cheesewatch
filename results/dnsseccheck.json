@@ -1,0 +1,39 @@
+{
+    "identitysandbox.gov": {
+        "_errors": [
+            "No DS records found for identitysandbox.gov - DNSSEC not active for zone"
+        ],
+        "dnskey_records": [
+            [
+                12872,
+                {
+                    "value": "257 3 13 OCqfahowrOrGC1eiVNmZ5VMiFTG0+Bio zzLZSFe9hcVCD0v5hXg/wpLXMI0qoutM /yIIHQosHq3e5cSKf59Hag==",
+                    "type": "KSK"
+                }
+            ],
+            [
+                46073,
+                {
+                    "value": "256 3 13 GUu6QvJi7JEr3Q0kJ1iS6koD7BPdf0A0 FXZ4SCB4f0Crvh5G5PkRS27G0xYU1KLJ 0q8N6ft53W53LO7tlloZKA==",
+                    "type": "ZSK"
+                }
+            ],
+            [
+                64551,
+                {
+                    "value": "256 3 13 DuhbDoM+X7d0YM5kAz9YZVoiSZOsIZyi NiCWYiMcXr71ou4WCathnq72SHJPOEJG 8HUipnfJDv0bq38kTat3pQ==",
+                    "type": "ZSK"
+                }
+            ]
+        ],
+        "ds_records": []
+    },
+    "login.gov": {
+        "_errors": [
+            "No DNSKEY records found for login.gov",
+            "No DS records found for login.gov - DNSSEC not active for zone"
+        ],
+        "dnskey_records": [],
+        "ds_records": []
+    }
+}
