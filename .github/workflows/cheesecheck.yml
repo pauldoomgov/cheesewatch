@@ -11,6 +11,7 @@ env:
   # Arguments for checks should be set here and are public
   NAMELIST: "secure.login.gov idp.staging.login.gov a.pivcac.prod.login.gov a.pivcac.staging.login.gov"
   CERTLIST: "secure.login.gov idp.staging.login.gov a.pivcac.prod.login.gov a.pivcac.staging.login.gov login.gov www.login.gov mta-sts.login.gov"
+  DNSSECLIST: "login.gov identitysandbox.gov"
 
 jobs:
   runchecks:
@@ -31,6 +32,8 @@ jobs:
       ### START CHECKS
       - name: Lookup DNS Records
         run: bin/namecheck.py ${NAMELIST} > temp/namecheck.json
+      - name: Lookup DNSSEC Records
+        run: bin/dnsseccheck.py ${DNSSECLIST} > temp/dnsseccheck.json
       - name: Gather TLS Certificate Chains
         run: bin/certcheck.py ${CERTLIST} > temp/certcheck.json
       ### END CHECKS
