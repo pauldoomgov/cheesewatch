@@ -8,9 +8,9 @@ import json
 # File to overide system resolv.conf - Use alternate forwarder
 RESOLV_CONF = "etc/insecure-resolv.conf"
 
-# DNSSEC records are huge and prone to timeouts - Set above 5 sec default
-LOOKUP_TIMEOUT = 30
-
+# DNSSEC is prone to lookup timeouts, depending on the cache.
+# This sets the number of times to try and get a result
+TRIES=3
 
 def rrserialize(obj):
     if isinstance(obj, rrset.RRset):
@@ -21,21 +21,28 @@ def rrserialize(obj):
 def get_dnskeys(res, name):
     out = {"_errors": [], "dnskey_records": (), "ksk_records": {}}
 
-    try:
-        result = res.resolve(name, "DNSKEY")
-        for rr in result.response.answer:
-            # Zero out the TTLs for consistency
-            rr.ttl = 0
-        answer = result.response.answer[0]
-    except resolver.NoAnswer:
-        out["_errors"].append(f"No DNSKEY records found for {name}")
-        answer = []
-    except resolver.NXDOMAIN:
-        out["_errors"].append(f"Domain not found: {name}")
-        return out
-    except exception.DNSException as err:
-        out["_errors"].append(f"DNSKEY error for {name}: {err}")
-        answer = []
+    for n in range(TRIES):
+        try:
+            result = res.resolve(name, "DNSKEY")
+            for rr in result.response.answer:
+                # Zero out the TTLs for consistency
+                rr.ttl = 0
+            answer = result.response.answer[0]
+            break
+        except exception.Timeout:
+            sys.stderr.write(f"Warning: Retrying DNSKEY lookup for {name} ({n})")
+            continue
+        except resolver.NoAnswer:
+            out["_errors"].append(f"No DNSKEY records found for {name}")
+            answer = []
+            break
+        except resolver.NXDOMAIN:
+            out["_errors"].append(f"Domain not found: {name}")
+            return out
+        except exception.DNSException as err:
+            out["_errors"].append(f"DNSKEY error for {name}: {err}")
+            answer = []
+            break
 
     dnskey_records = {}
     for k in answer:
@@ -59,23 +66,30 @@ def get_dnskeys(res, name):
 
 def get_ds(res, name, ksk_records):
     out = {"_errors": [], "ds_records": ()}
-    try:
-        result = res.resolve(name, "DS")
-        for rr in result.response.answer:
-            # Zero out the TTLs for consistency
-            rr.ttl = 0
-        answer = result.response.answer[0]
-    except resolver.NoAnswer:
-        out["_errors"].append(
-            f"No DS records found for {name} - DNSSEC not active for zone"
-        )
-        answer = []
-    except resolver.NXDOMAIN:
-        out["_errors"].append(f"Domain not found: {name}")
-        return out
-    except exception.DNSException as err:
-        out["_errors"].append(f"DS error for {name}: {err}")
-        answer = []
+    for n in range(TRIES):
+        try:
+            result = res.resolve(name, "DS")
+            for rr in result.response.answer:
+                # Zero out the TTLs for consistency
+                rr.ttl = 0
+            answer = result.response.answer[0]
+            break
+        except exception.Timeout:
+            sys.stderr.write(f"Warning: Retrying DS lookup for {name} ({n})")
+            continue
+        except resolver.NoAnswer:
+            out["_errors"].append(
+                f"No DS records found for {name} - DNSSEC not active for zone"
+            )
+            answer = []
+            break
+        except resolver.NXDOMAIN:
+            out["_errors"].append(f"Domain not found: {name}")
+            return out
+        except exception.DNSException as err:
+            out["_errors"].append(f"DS error for {name}: {err}")
+            answer = []
+            break
 
     ds_records = {}
     for ds in answer:
@@ -120,6 +134,10 @@ def main():
         sys.exit(1)
 
     out = {}
+
+    # Lower timeout - Retries will be used instead as record lookup fails
+    # seem to timeout no matter what
+    LOOKUP_TIMEOUT = 2
 
     res = resolver.Resolver(filename=RESOLV_CONF)
     res.timeout = LOOKUP_TIMEOUT
