@@ -30,7 +30,7 @@
     },
     "login.gov": {
         "_errors": [
-            "DNSKEY error for login.gov: The DNS operation timed out after 30.130871772766113 seconds",
+            "No DNSKEY records found for login.gov",
             "No DS records found for login.gov - DNSSEC not active for zone"
         ],
         "dnskey_records": [],
