@@ -1,8 +1,6 @@
 {
     "identitysandbox.gov": {
-        "_errors": [
-            "No DS records found for identitysandbox.gov - DNSSEC not active for zone"
-        ],
+        "_errors": [],
         "dnskey_records": [
             [
                 12872,
@@ -26,7 +24,15 @@
                 }
             ]
         ],
-        "ds_records": []
+        "ds_records": [
+            [
+                "12872_SHA256",
+                {
+                    "value": "12872 13 2 4acb729504f6c0cff7bbe85c41f0f1abf1773e6bae678dc4ca0baafb2fb3bbd5",
+                    "valid_key_digest": true
+                }
+            ]
+        ]
     },
     "login.gov": {
         "_errors": [
