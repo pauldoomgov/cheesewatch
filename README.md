@@ -28,8 +28,11 @@ The CheeseWatch process:
   - [Security and Privacy](#security-and-privacy)
   - [Jobs](#jobs)
   - [Local Testing](#local-testing)
+    - [Using check scripts locally](#running-check-scripts-locally)
+    - [Running GitHub Actions locally](#running-github-actions-locally)
 
 <!-- /TOC -->
+
 ## Cloning
 
 You can fork this repo!  Make sure to update `.github/workflows/cheesecheck.yml`
@@ -389,5 +392,38 @@ don't include time or other things that change, etc.
 Keep the mouse happy.
 
 ## Local Testing
+
+### Running check scripts locally
+
+Python 3 is required to run most scripts in `bin/`
+
+* Create a virtual environment
+~~~sh
+python3 -m venv .venv
+~~~
+
+* Activate the virtual environment
+~~~sh
+. .venv/bin/activate
+~~~
+
+* Run whatever you want in `bin/` - Here is an example of namecheck:
+~~~sh
+$ ./bin/namecheck.py github.com ietf.org
+{
+    "github.com": [
+        [
+            "github.com. 0 IN A 140.82.112.4"
+        ]
+    ],
+    "ietf.org": [
+        [
+            "ietf.org. 0 IN A 4.31.198.44"
+        ]
+    ]
+}
+~~~
+
+### Running GitHub Actions locally
 
 Use `act` - https://github.com/nektos/act
