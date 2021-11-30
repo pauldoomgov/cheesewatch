@@ -35,9 +35,7 @@
         ]
     },
     "login.gov": {
-        "_errors": [
-            "No DS records found for login.gov - DNSSEC not active for zone"
-        ],
+        "_errors": [],
         "dnskey_records": [
             [
                 45430,
@@ -54,6 +52,14 @@
                 }
             ]
         ],
-        "ds_records": []
+        "ds_records": [
+            [
+                "45430_SHA256",
+                {
+                    "value": "45430 13 2 2a2175dc560534ae9d156f8f06d5b7e8421fe2023158834ef4962cb2d902c9dc",
+                    "valid_key_digest": true
+                }
+            ]
+        ]
     }
 }
