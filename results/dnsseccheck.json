@@ -36,10 +36,24 @@
     },
     "login.gov": {
         "_errors": [
-            "No DNSKEY records found for login.gov",
             "No DS records found for login.gov - DNSSEC not active for zone"
         ],
-        "dnskey_records": [],
+        "dnskey_records": [
+            [
+                45430,
+                {
+                    "value": "257 3 13 0OElL9w/fDTp3os1LoJv4u7ctaaZGOVW eJ8W9gfUzhmiQ+h0PrAqyMD0hfqIOAcO BEkYr1HfaOgxfIYqejnu7A==",
+                    "type": "KSK"
+                }
+            ],
+            [
+                60514,
+                {
+                    "value": "256 3 13 dvkZ3Ov5igz7z0HgnVDEbH//Zh/Q5i9Z Syne+u9T4HE8HwEoTl42Dhsr1qO86viu 4nGjpb4kyyxaFaertwUwdw==",
+                    "type": "ZSK"
+                }
+            ]
+        ],
         "ds_records": []
     }
 }
