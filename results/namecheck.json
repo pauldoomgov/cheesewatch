@@ -27,13 +27,6 @@
         ]
     ],
     "secure.login.gov": [
-        [
-            "secure.login.gov. 0 IN CNAME login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com."
-        ],
-        [
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 44.236.214.17",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 52.88.43.70",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 54.214.183.90"
-        ]
+        "The resolution lifetime expired after 5.4021947383880615 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.; Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.; Server 127.0.0.53 UDP port 53 answered The DNS operation timed out."
     ]
 }
