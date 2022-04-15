@@ -33,7 +33,7 @@
         [
             "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 34.210.214.124",
             "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 35.155.136.248",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 44.239.82.65"
+            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 44.238.237.77"
         ]
     ]
 }
