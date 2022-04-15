@@ -67,7 +67,7 @@ jobs:
         run: git diff --exit-code --staged results/ >> temp/changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
       - name: Commit and Push Changes
         if: env.CHANGED == 1
-        uses: actions-x/commit@v2
+        uses: actions-x/commit@v5
       - name: Output Change Report
         id: changeset
         if: env.CHANGED == 1
