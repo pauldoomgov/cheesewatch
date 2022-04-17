@@ -22,8 +22,8 @@
             "idp.staging.login.gov. 0 IN CNAME login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com."
         ],
         [
-            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 34.209.11.194",
-            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 54.186.65.100"
+            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 34.212.201.145",
+            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 44.239.132.11"
         ]
     ],
     "secure.login.gov": [
