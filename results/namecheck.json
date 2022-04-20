@@ -9,13 +9,7 @@
         ]
     ],
     "a.pivcac.staging.login.gov": [
-        [
-            "a.pivcac.staging.login.gov. 0 IN CNAME staging-pivcac-2084686008.us-west-2.elb.amazonaws.com."
-        ],
-        [
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.40.88.129",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.148.144.53"
-        ]
+        "The resolution lifetime expired after 5.402 seconds: Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.; Server 127.0.0.53 UDP port 53 answered The DNS operation timed out.; Server 127.0.0.53 UDP port 53 answered The DNS operation timed out."
     ],
     "idp.staging.login.gov": [
         [
