@@ -1,9 +1,9 @@
 {
     "a.pivcac.prod.login.gov": {
-        "expiration": "2022-08-27T18:41:52",
+        "expiration": "2022-06-28T17:26:21",
         "chain": {
             "/CN=*.pivcac.prod.login.gov": {
-                "serial": 316127248447698561243136888651870421109232,
+                "serial": 412352056432199901387530083760828650662907,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
@@ -13,10 +13,10 @@
         }
     },
     "a.pivcac.staging.login.gov": {
-        "expiration": "2022-08-27T13:35:06",
+        "expiration": "2022-08-27T20:02:07",
         "chain": {
             "/CN=*.pivcac.staging.login.gov": {
-                "serial": 364093069006565792841627857456801056597399,
+                "serial": 434230984305562782530145989963789800463529,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
