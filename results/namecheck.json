@@ -22,8 +22,8 @@
             "idp.staging.login.gov. 0 IN CNAME login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com."
         ],
         [
-            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 35.163.233.208",
-            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 54.68.141.17"
+            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 100.20.135.103",
+            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 34.209.11.194"
         ]
     ],
     "secure.login.gov": [
@@ -31,9 +31,9 @@
             "secure.login.gov. 0 IN CNAME login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com."
         ],
         [
+            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 35.162.188.10",
             "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 35.166.250.23",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 44.236.114.169",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 52.27.186.197"
+            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 44.236.114.169"
         ]
     ]
 }
