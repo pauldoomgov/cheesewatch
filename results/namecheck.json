@@ -22,10 +22,10 @@
             "idp.staging.login.gov. 0 IN CNAME d3tiu39de3oite.cloudfront.net."
         ],
         [
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.10",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.102",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.21",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.61"
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 18.67.65.27",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 18.67.65.58",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 18.67.65.63",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 18.67.65.85"
         ]
     ],
     "secure.login.gov": [
