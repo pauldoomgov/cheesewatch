@@ -26,10 +26,10 @@
         }
     },
     "idp.staging.login.gov": {
-        "expiration": "2022-10-07T23:59:59",
+        "expiration": "2023-08-18T23:59:59",
         "chain": {
             "/CN=idp.staging.login.gov": {
-                "serial": 11739964388067710989069354497187544112,
+                "serial": 6348332567097993549723344299733806435,
                 "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
             },
             "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon": {

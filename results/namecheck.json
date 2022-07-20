@@ -14,16 +14,19 @@
         ],
         [
             "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 44.240.175.154",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.40.88.129"
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.40.88.129",
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.149.151.190"
         ]
     ],
     "idp.staging.login.gov": [
         [
-            "idp.staging.login.gov. 0 IN CNAME login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com."
+            "idp.staging.login.gov. 0 IN CNAME d3tiu39de3oite.cloudfront.net."
         ],
         [
-            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 100.20.135.103",
-            "login-idp-alb-staging-486274379.us-west-2.elb.amazonaws.com. 0 IN A 34.210.135.251"
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.32.164.110",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.32.164.116",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.32.164.129",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.32.164.52"
         ]
     ],
     "secure.login.gov": [
