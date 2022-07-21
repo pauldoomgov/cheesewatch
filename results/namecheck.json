@@ -22,10 +22,10 @@
             "idp.staging.login.gov. 0 IN CNAME d3tiu39de3oite.cloudfront.net."
         ],
         [
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.32.208.106",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.32.208.115",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.32.208.88",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.32.208.99"
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 52.85.132.127",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 52.85.132.25",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 52.85.132.66",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 52.85.132.96"
         ]
     ],
     "secure.login.gov": [
@@ -33,8 +33,8 @@
             "secure.login.gov. 0 IN CNAME login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com."
         ],
         [
+            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 44.237.216.249",
             "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 52.27.186.197",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 52.34.172.247",
             "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 52.41.184.76"
         ]
     ]
