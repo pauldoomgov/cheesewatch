@@ -33,10 +33,10 @@
             "secure.login.gov. 0 IN CNAME d3koqshax83fsx.cloudfront.net."
         ],
         [
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.11",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.23",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.36",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.72"
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 108.156.211.127",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 108.156.211.5",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 108.156.211.54",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 108.156.211.92"
         ]
     ]
 }
