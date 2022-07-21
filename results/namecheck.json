@@ -4,8 +4,9 @@
             "a.pivcac.prod.login.gov. 0 IN CNAME prod-pivcac-594195768.us-west-2.elb.amazonaws.com."
         ],
         [
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.38.7.227",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 54.184.115.198"
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 35.155.171.210",
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 44.237.221.255",
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.40.196.252"
         ]
     ],
     "a.pivcac.staging.login.gov": [
@@ -30,12 +31,13 @@
     ],
     "secure.login.gov": [
         [
-            "secure.login.gov. 0 IN CNAME login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com."
+            "secure.login.gov. 0 IN CNAME d3koqshax83fsx.cloudfront.net."
         ],
         [
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 44.237.216.249",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 52.27.186.197",
-            "login-idp-alb-prod-1175776541.us-west-2.elb.amazonaws.com. 0 IN A 52.41.184.76"
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 54.230.21.118",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 54.230.21.23",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 54.230.21.27",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 54.230.21.55"
         ]
     ]
 }
