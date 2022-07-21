@@ -22,10 +22,10 @@
             "idp.staging.login.gov. 0 IN CNAME d3tiu39de3oite.cloudfront.net."
         ],
         [
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.156.224.120",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.156.224.71",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.156.224.91",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.156.224.97"
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.10",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.102",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.21",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.61"
         ]
     ],
     "secure.login.gov": [
@@ -33,10 +33,10 @@
             "secure.login.gov. 0 IN CNAME d3koqshax83fsx.cloudfront.net."
         ],
         [
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.11",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.23",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.36",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.72"
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.227.74.15",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.227.74.16",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.227.74.36",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.227.74.95"
         ]
     ]
 }
