@@ -13,8 +13,10 @@
             "a.pivcac.staging.login.gov. 0 IN CNAME staging-pivcac-2084686008.us-west-2.elb.amazonaws.com."
         ],
         [
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 44.240.175.154",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.149.151.190"
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 44.239.232.19",
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.40.88.129",
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.149.231.54",
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.200.140.163"
         ]
     ],
     "idp.staging.login.gov": [
@@ -22,10 +24,10 @@
             "idp.staging.login.gov. 0 IN CNAME d3tiu39de3oite.cloudfront.net."
         ],
         [
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.225.223.100",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.225.223.47",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.225.223.83",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.225.223.94"
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.10",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.102",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.21",
+            "d3tiu39de3oite.cloudfront.net. 0 IN A 108.139.1.61"
         ]
     ],
     "secure.login.gov": [
@@ -33,10 +35,10 @@
             "secure.login.gov. 0 IN CNAME d3koqshax83fsx.cloudfront.net."
         ],
         [
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 18.67.65.117",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 18.67.65.127",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 18.67.65.14",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 18.67.65.24"
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.35.125.122",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.35.125.127",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.35.125.40",
+            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.35.125.57"
         ]
     ]
 }
