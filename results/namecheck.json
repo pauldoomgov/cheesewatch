@@ -16,27 +16,5 @@
             "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 44.239.232.19",
             "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.40.88.129"
         ]
-    ],
-    "idp.staging.login.gov": [
-        [
-            "idp.staging.login.gov. 0 IN CNAME d3tiu39de3oite.cloudfront.net."
-        ],
-        [
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.225.41.10",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.225.41.100",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.225.41.119",
-            "d3tiu39de3oite.cloudfront.net. 0 IN A 13.225.41.75"
-        ]
-    ],
-    "secure.login.gov": [
-        [
-            "secure.login.gov. 0 IN CNAME d3koqshax83fsx.cloudfront.net."
-        ],
-        [
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.11",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.23",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.36",
-            "d3koqshax83fsx.cloudfront.net. 0 IN A 13.225.41.72"
-        ]
     ]
 }
