@@ -64,10 +64,10 @@
         }
     },
     "mta-sts.login.gov": {
-        "expiration": "2022-12-08T23:59:59",
+        "expiration": "2023-11-08T23:59:59",
         "chain": {
             "/CN=mta-sts.login.gov": {
-                "serial": 14939496813720960397646875723106300026,
+                "serial": 4716930239258626098813210016831778205,
                 "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
             },
             "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon": {
