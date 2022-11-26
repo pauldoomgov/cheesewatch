@@ -13,10 +13,10 @@
         }
     },
     "a.pivcac.staging.login.gov": {
-        "expiration": "2023-02-24T05:29:23",
+        "expiration": "2022-12-26T05:21:48",
         "chain": {
             "/CN=*.pivcac.staging.login.gov": {
-                "serial": 416574132574752881080034608989474510905818,
+                "serial": 418916342436766012996978164051218097185745,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
