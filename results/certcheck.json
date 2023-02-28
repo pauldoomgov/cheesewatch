@@ -88,11 +88,11 @@
         "expiration": "2023-08-20T23:59:59",
         "chain": {
             "/CN=secure.login.gov": {
-                "serial": 5799257388140933262141016548368993596,
-                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M02"
+                "serial": 20841853382867458033989602193648283094,
+                "issuer": "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon"
             },
-            "/C=US/O=Amazon/CN=Amazon RSA 2048 M02": {
-                "serial": 166129353110899469622597955040406457904926625,
+            "/C=US/O=Amazon/OU=Server CA 1B/CN=Amazon": {
+                "serial": 144918209630989264145272943054026349679957517,
                 "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
             },
             "/C=US/O=Amazon/CN=Amazon Root CA 1": {
