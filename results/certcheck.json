@@ -1,9 +1,9 @@
 {
     "a.pivcac.prod.login.gov": {
-        "expiration": "2023-08-26T19:46:41",
+        "expiration": "2024-02-24T15:08:51",
         "chain": {
             "/CN=*.pivcac.prod.login.gov": {
-                "serial": 345485323888109574351296284639684190633237,
+                "serial": 266978018559579772435573745912446721684399,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
@@ -13,10 +13,10 @@
         }
     },
     "a.pivcac.staging.login.gov": {
-        "expiration": "2023-08-24T09:22:12",
+        "expiration": "2024-02-21T02:26:39",
         "chain": {
             "/CN=*.pivcac.staging.login.gov": {
-                "serial": 302858553222386037727649814339601298519222,
+                "serial": 393742118233165522131593017728003393055009,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
@@ -26,14 +26,14 @@
         }
     },
     "idp.staging.login.gov": {
-        "expiration": "2023-08-18T23:59:59",
+        "expiration": "2024-07-19T23:59:59",
         "chain": {
             "/CN=idp.staging.login.gov": {
-                "serial": 11802211750660395138707657714323554579,
-                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M02"
+                "serial": 12469327305879434519116581693729712000,
+                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M01"
             },
-            "/C=US/O=Amazon/CN=Amazon RSA 2048 M02": {
-                "serial": 166129353110899469622597955040406457904926625,
+            "/C=US/O=Amazon/CN=Amazon RSA 2048 M01": {
+                "serial": 166129328851546858514271303855646110030630415,
                 "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
             },
             "/C=US/O=Amazon/CN=Amazon Root CA 1": {
@@ -47,10 +47,10 @@
         }
     },
     "login.gov": {
-        "expiration": "2023-07-13T11:01:51",
+        "expiration": "2024-03-09T11:01:09",
         "chain": {
             "/CN=login.gov": {
-                "serial": 392666894552111249782052645794062934621272,
+                "serial": 423696643968765271559915024294118583254052,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
@@ -64,14 +64,14 @@
         }
     },
     "mta-sts.login.gov": {
-        "expiration": "2023-11-08T23:59:59",
+        "expiration": "2024-10-08T23:59:59",
         "chain": {
             "/CN=mta-sts.login.gov": {
-                "serial": 16293970646173026065004001204289728376,
-                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M02"
+                "serial": 10571416528464571963562509734157893555,
+                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M03"
             },
-            "/C=US/O=Amazon/CN=Amazon RSA 2048 M02": {
-                "serial": 166129353110899469622597955040406457904926625,
+            "/C=US/O=Amazon/CN=Amazon RSA 2048 M03": {
+                "serial": 166129356476704345391986644047206454194698629,
                 "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
             },
             "/C=US/O=Amazon/CN=Amazon Root CA 1": {
@@ -85,14 +85,14 @@
         }
     },
     "secure.login.gov": {
-        "expiration": "2023-08-20T23:59:59",
+        "expiration": "2024-07-21T23:59:59",
         "chain": {
             "/CN=secure.login.gov": {
-                "serial": 5799257388140933262141016548368993596,
-                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M02"
+                "serial": 15388074323372814913466568364475567513,
+                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M01"
             },
-            "/C=US/O=Amazon/CN=Amazon RSA 2048 M02": {
-                "serial": 166129353110899469622597955040406457904926625,
+            "/C=US/O=Amazon/CN=Amazon RSA 2048 M01": {
+                "serial": 166129328851546858514271303855646110030630415,
                 "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
             },
             "/C=US/O=Amazon/CN=Amazon Root CA 1": {
@@ -106,10 +106,10 @@
         }
     },
     "www.login.gov": {
-        "expiration": "2023-07-13T11:01:51",
+        "expiration": "2024-03-09T11:01:09",
         "chain": {
             "/CN=login.gov": {
-                "serial": 392666894552111249782052645794062934621272,
+                "serial": 423696643968765271559915024294118583254052,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
