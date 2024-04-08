@@ -47,19 +47,15 @@
         }
     },
     "login.gov": {
-        "expiration": "2024-05-08T11:01:09",
+        "expiration": "2024-07-07T11:01:18",
         "chain": {
             "/CN=login.gov": {
-                "serial": 414414398347529268331359991214026058921048,
+                "serial": 288069831226081428981067529750633054566036,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
                 "serial": 192961496339968674994309121183282847578,
                 "issuer": "/C=US/O=Internet Security Research Group/CN=ISRG Root X1"
-            },
-            "/C=US/O=Internet Security Research Group/CN=ISRG Root X1": {
-                "serial": 85078200265644417569109389142156118711,
-                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
             }
         }
     },
@@ -106,19 +102,15 @@
         }
     },
     "www.login.gov": {
-        "expiration": "2024-05-08T11:01:09",
+        "expiration": "2024-07-07T11:01:18",
         "chain": {
             "/CN=login.gov": {
-                "serial": 414414398347529268331359991214026058921048,
+                "serial": 288069831226081428981067529750633054566036,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R3"
             },
             "/C=US/O=Let's Encrypt/CN=R3": {
                 "serial": 192961496339968674994309121183282847578,
                 "issuer": "/C=US/O=Internet Security Research Group/CN=ISRG Root X1"
-            },
-            "/C=US/O=Internet Security Research Group/CN=ISRG Root X1": {
-                "serial": 85078200265644417569109389142156118711,
-                "issuer": "/O=Digital Signature Trust Co./CN=DST Root CA X3"
             }
         }
     }
