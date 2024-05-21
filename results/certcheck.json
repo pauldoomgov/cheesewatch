@@ -26,14 +26,14 @@
         }
     },
     "idp.staging.login.gov": {
-        "expiration": "2024-07-19T23:59:59",
+        "expiration": "2025-06-19T23:59:59",
         "chain": {
             "/CN=idp.staging.login.gov": {
-                "serial": 12469327305879434519116581693729712000,
-                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M01"
+                "serial": 8051205154493570179620156745565834026,
+                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M02"
             },
-            "/C=US/O=Amazon/CN=Amazon RSA 2048 M01": {
-                "serial": 166129328851546858514271303855646110030630415,
+            "/C=US/O=Amazon/CN=Amazon RSA 2048 M02": {
+                "serial": 166129353110899469622597955040406457904926625,
                 "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
             },
             "/C=US/O=Amazon/CN=Amazon Root CA 1": {
