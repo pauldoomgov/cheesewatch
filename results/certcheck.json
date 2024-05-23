@@ -81,14 +81,14 @@
         }
     },
     "secure.login.gov": {
-        "expiration": "2024-07-21T23:59:59",
+        "expiration": "2025-06-21T23:59:59",
         "chain": {
             "/CN=secure.login.gov": {
-                "serial": 15388074323372814913466568364475567513,
-                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M01"
+                "serial": 12822333462698458242295539210558083604,
+                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M03"
             },
-            "/C=US/O=Amazon/CN=Amazon RSA 2048 M01": {
-                "serial": 166129328851546858514271303855646110030630415,
+            "/C=US/O=Amazon/CN=Amazon RSA 2048 M03": {
+                "serial": 166129356476704345391986644047206454194698629,
                 "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
             },
             "/C=US/O=Amazon/CN=Amazon Root CA 1": {
