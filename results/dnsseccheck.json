@@ -3,6 +3,13 @@
         "_errors": [],
         "dnskey_records": [
             [
+                4940,
+                {
+                    "value": "256 3 13 fsw0jyxog73bbU/OvUTOG4Z58/f42GLS LDThwMA76qwW5B93oWnYCNaVUk3IfP/4 jmccK5TgGqMeFTYV7PopxA==",
+                    "type": "ZSK"
+                }
+            ],
+            [
                 12872,
                 {
                     "value": "257 3 13 OCqfahowrOrGC1eiVNmZ5VMiFTG0+Bio zzLZSFe9hcVCD0v5hXg/wpLXMI0qoutM /yIIHQosHq3e5cSKf59Hag==",
@@ -13,13 +20,6 @@
                 31493,
                 {
                     "value": "256 3 13 YyFHgLAj/8Cvt+UVls8uqCk66py/etDp yjp32YlN1dFyaLK9wBKuJBPEENND6eHo zhmvfY5R6RvoyguBpUgQXQ==",
-                    "type": "ZSK"
-                }
-            ],
-            [
-                58154,
-                {
-                    "value": "256 3 13 V9RH5dNXA83K/56W9/IQlPakUCzIR15q RghTWIe33b+V1dkDYdiJWYsN3jN2gN+7 vM4J85irwJJwoGUDZccU0g==",
                     "type": "ZSK"
                 }
             ]
