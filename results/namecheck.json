@@ -1,14 +1,6 @@
 {
     "a.pivcac.prod.login.gov": [
-        [
-            "a.pivcac.prod.login.gov. 0 IN CNAME prod-pivcac-594195768.us-west-2.elb.amazonaws.com."
-        ],
-        [
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 34.212.6.179",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 35.162.117.234",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 44.236.59.233",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 44.240.248.94"
-        ]
+        "The resolution lifetime expired after 5.402 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.; Server Do53:127.0.0.53@53 answered The DNS operation timed out.; Server Do53:127.0.0.53@53 answered The DNS operation timed out."
     ],
     "a.pivcac.staging.login.gov": [
         [
