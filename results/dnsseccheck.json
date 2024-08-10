@@ -38,16 +38,16 @@
         "_errors": [],
         "dnskey_records": [
             [
-                1641,
+                17252,
                 {
-                    "value": "256 3 13 yyS5Prp+f0M/s47Joh3QPyePg29NdvkV Xb93FJWuZp7z8wfuQU+QDvGhNOiXf9iU o1mHXEmA+e77ypXX5531aw==",
+                    "value": "256 3 13 KFTeB0B902R7LCEuA3FYzpEebuj7cdwx JGc5piWRRAsl34XS9+dFLe7+3d3ILgm8 G0rHoJu4Gw9ChPkLKx0FPA==",
                     "type": "ZSK"
                 }
             ],
             [
-                17252,
+                20565,
                 {
-                    "value": "256 3 13 KFTeB0B902R7LCEuA3FYzpEebuj7cdwx JGc5piWRRAsl34XS9+dFLe7+3d3ILgm8 G0rHoJu4Gw9ChPkLKx0FPA==",
+                    "value": "256 3 13 a0w91e6YtNK+GQguryNXqM7q20aYM3gz 1YBYEf0Wk9sRstFQaYEchMjvGZMvSjZe 2PrUAULV5SHuqHMKYotvIw==",
                     "type": "ZSK"
                 }
             ],
