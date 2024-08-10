@@ -60,10 +60,10 @@
         }
     },
     "mta-sts.login.gov": {
-        "expiration": "2024-10-08T23:59:59",
+        "expiration": "2025-09-08T23:59:59",
         "chain": {
             "/CN=mta-sts.login.gov": {
-                "serial": 10571416528464571963562509734157893555,
+                "serial": 7837677489767337809296646636606993715,
                 "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M03"
             },
             "/C=US/O=Amazon/CN=Amazon RSA 2048 M03": {
