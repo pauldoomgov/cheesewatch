@@ -17,13 +17,13 @@ jobs:
   runchecks:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Make Temporary Results Dir
         run: mkdir -p temp
       - name: Setup Python 3
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9
+          python-version: 3.12
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -39,7 +39,7 @@ jobs:
       ### END CHECKS
 
       - name: Store Current Results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: cheeserun-results-${{github.run_id}}
           path: temp/
@@ -50,11 +50,11 @@ jobs:
     env:
       CHANGED: 0
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
       - name: Restore Latest Results
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: cheeserun-results-${{github.run_id}}
           path: temp/
@@ -67,7 +67,7 @@ jobs:
         run: git diff --exit-code --staged results/ >> temp/changeset.diff || echo "CHANGED=1" >> $GITHUB_ENV
       - name: Commit and Push Changes
         if: env.CHANGED == 1
-        uses: actions-x/commit@v5
+        uses: actions-x/commit@v6
       - name: Output Change Report
         id: changeset
         if: env.CHANGED == 1
