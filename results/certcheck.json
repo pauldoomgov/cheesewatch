@@ -13,14 +13,14 @@
         }
     },
     "a.pivcac.staging.login.gov": {
-        "expiration": "2024-12-18T00:47:26",
+        "expiration": "2024-10-19T01:41:13",
         "chain": {
             "/CN=*.pivcac.staging.login.gov": {
-                "serial": 353322031294050045980980614025642497653102,
-                "issuer": "/C=US/O=Let's Encrypt/CN=R11"
+                "serial": 399689330745641589261856841003183098466429,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R10"
             },
-            "/C=US/O=Let's Encrypt/CN=R11": {
-                "serial": 184083759606652600789093070426744763640,
+            "/C=US/O=Let's Encrypt/CN=R10": {
+                "serial": 100566080436859127493189557861323994576,
                 "issuer": "/C=US/O=Internet Security Research Group/CN=ISRG Root X1"
             }
         }
