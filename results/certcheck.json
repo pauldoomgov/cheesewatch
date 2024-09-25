@@ -1,9 +1,9 @@
 {
     "a.pivcac.prod.login.gov": {
-        "expiration": "2024-12-22T07:30:55",
+        "expiration": "2024-12-22T00:07:14",
         "chain": {
             "/CN=*.pivcac.prod.login.gov": {
-                "serial": 270676265916599669999860291991404234242965,
+                "serial": 418770269509388581418435817223421876148631,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R11"
             },
             "/C=US/O=Let's Encrypt/CN=R11": {
