@@ -10,17 +10,17 @@
                 }
             ],
             [
+                8677,
+                {
+                    "value": "256 3 13 c7gyEEMuIHf+ufJoxD6a7mjKcxk9YLnB 60yYz8+4x8mdGc4TqZhftHNKXO0Bd4pz grCN7f87O8ZkUoupePVQRg==",
+                    "type": "ZSK"
+                }
+            ],
+            [
                 12872,
                 {
                     "value": "257 3 13 OCqfahowrOrGC1eiVNmZ5VMiFTG0+Bio zzLZSFe9hcVCD0v5hXg/wpLXMI0qoutM /yIIHQosHq3e5cSKf59Hag==",
                     "type": "KSK"
-                }
-            ],
-            [
-                49424,
-                {
-                    "value": "256 3 13 2E68E76NWcA9N6zbiJFzx/GVcuH93NuU Ci57msvVH+w6qBldUKRRpeY3bOBwS1hS SKvFh0xfoU0WQeVvRwgp1Q==",
-                    "type": "ZSK"
                 }
             ]
         ],
