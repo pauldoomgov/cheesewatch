@@ -38,17 +38,17 @@
         "_errors": [],
         "dnskey_records": [
             [
-                24948,
-                {
-                    "value": "256 3 13 T6ptV8aRdtoMEjTsEFrOjbv2VGkkyHbn YliRpyG8b8vKOatZlKl4ju4f9xPVsNtC M7uWFQSmAbjPYzKWkvqTZQ==",
-                    "type": "ZSK"
-                }
-            ],
-            [
                 45430,
                 {
                     "value": "257 3 13 0OElL9w/fDTp3os1LoJv4u7ctaaZGOVW eJ8W9gfUzhmiQ+h0PrAqyMD0hfqIOAcO BEkYr1HfaOgxfIYqejnu7A==",
                     "type": "KSK"
+                }
+            ],
+            [
+                47841,
+                {
+                    "value": "256 3 13 zJUQOV4LqG8J/FWS6QREkjJBVyG01LNF 1scFun1o74fWR92JjcBakxidyDjcsUmD v2GIpUjQoB9SUdnl8P8aFw==",
+                    "type": "ZSK"
                 }
             ],
             [
