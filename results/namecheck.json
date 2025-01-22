@@ -14,9 +14,7 @@
         ],
         [
             "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.13.57.99",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.37.106.7",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.40.74.36",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.186.153.214"
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.40.74.36"
         ]
     ]
 }
