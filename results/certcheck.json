@@ -47,10 +47,10 @@
         }
     },
     "login.gov": {
-        "expiration": "2025-03-04T11:03:32",
+        "expiration": "2025-05-03T11:03:02",
         "chain": {
             "/CN=login.gov": {
-                "serial": 271447377227814263971389117941441684351706,
+                "serial": 430594881634073670728034439753101451149159,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R10"
             },
             "/C=US/O=Let's Encrypt/CN=R10": {
@@ -102,10 +102,10 @@
         }
     },
     "www.login.gov": {
-        "expiration": "2025-03-04T11:03:32",
+        "expiration": "2025-05-03T11:03:02",
         "chain": {
             "/CN=login.gov": {
-                "serial": 271447377227814263971389117941441684351706,
+                "serial": 430594881634073670728034439753101451149159,
                 "issuer": "/C=US/O=Let's Encrypt/CN=R10"
             },
             "/C=US/O=Let's Encrypt/CN=R10": {
