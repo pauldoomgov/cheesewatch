@@ -9,12 +9,6 @@
         ]
     ],
     "a.pivcac.staging.login.gov": [
-        [
-            "a.pivcac.staging.login.gov. 0 IN CNAME staging-pivcac-2084686008.us-west-2.elb.amazonaws.com."
-        ],
-        [
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 35.165.243.195",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.89.101.46"
-        ]
+        "The resolution lifetime expired after 5.403 seconds: Server Do53:127.0.0.53@53 answered The DNS operation timed out.; Server Do53:127.0.0.53@53 answered The DNS operation timed out.; Server Do53:127.0.0.53@53 answered The DNS operation timed out."
     ]
 }
