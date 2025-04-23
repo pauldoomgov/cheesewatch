@@ -77,23 +77,19 @@
         }
     },
     "secure.login.gov": {
-        "expiration": "2025-06-21T23:59:59",
+        "expiration": "2026-05-23T23:59:59",
         "chain": {
             "/CN=secure.login.gov": {
-                "serial": 12822333462698458242295539210558083604,
-                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M03"
+                "serial": 5334234144961855249573218173108573392,
+                "issuer": "/C=US/O=Amazon/CN=Amazon RSA 2048 M02"
             },
-            "/C=US/O=Amazon/CN=Amazon RSA 2048 M03": {
-                "serial": 166129356476704345391986644047206454194698629,
+            "/C=US/O=Amazon/CN=Amazon RSA 2048 M02": {
+                "serial": 166129353110899469622597955040406457904926625,
                 "issuer": "/C=US/O=Amazon/CN=Amazon Root CA 1"
             },
             "/C=US/O=Amazon/CN=Amazon Root CA 1": {
                 "serial": 144918191876577076464031512351042010504348870,
                 "issuer": "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2"
-            },
-            "/C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2": {
-                "serial": 12037640545166866303,
-                "issuer": "/C=US/O=Starfield Technologies, Inc./OU=Starfield Class 2 Certification Authority"
             }
         }
     },
