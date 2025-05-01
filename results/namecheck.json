@@ -5,9 +5,7 @@
         ],
         [
             "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 35.163.134.2",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.10.20.122",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 54.187.22.254",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 54.71.118.180"
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 54.187.22.254"
         ]
     ],
     "a.pivcac.staging.login.gov": [
