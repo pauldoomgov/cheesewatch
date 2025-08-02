@@ -6,8 +6,8 @@
         [
             "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 35.155.39.103",
             "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 35.161.50.133",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.32.98.60",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.35.43.163"
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 50.112.155.192",
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.32.98.60"
         ]
     ],
     "a.pivcac.staging.login.gov": [
@@ -16,7 +16,7 @@
         ],
         [
             "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.34.239.209",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.69.56.247"
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.43.1.243"
         ]
     ]
 }
