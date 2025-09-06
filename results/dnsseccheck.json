@@ -38,9 +38,9 @@
         "_errors": [],
         "dnskey_records": [
             [
-                1847,
+                11781,
                 {
-                    "value": "256 3 13 SsvJhYGA/GgiCiZgLt01/CiLWGxYRAiD QvJsB6mbeUxMpf8aPjWdZJubdUGYguQp 75smlm8ZFUqJuRuqx1JT2w==",
+                    "value": "256 3 13 jvMLroNmrQFYKJOU33vKfH/c5H8mNoS/ A8gfgsUC7JOXrH17AS8X61G/cqTytret 90CL3Z7YsrbPUwLzfK4kWA==",
                     "type": "ZSK"
                 }
             ],
