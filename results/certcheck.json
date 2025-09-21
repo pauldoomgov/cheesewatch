@@ -1,13 +1,13 @@
 {
     "a.pivcac.prod.login.gov": {
-        "expiration": "2025-12-20T01:37:21",
+        "expiration": "2025-10-20T15:28:44",
         "chain": {
             "/CN=*.pivcac.prod.login.gov": {
-                "serial": 564207462659818246279712090451280499691785,
-                "issuer": "/C=US/O=Let's Encrypt/CN=R12"
+                "serial": 462961681183148202613812566434950110114736,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R10"
             },
-            "/C=US/O=Let's Encrypt/CN=R12": {
-                "serial": 257964712623187159666453466812961334844,
+            "/C=US/O=Let's Encrypt/CN=R10": {
+                "serial": 100566080436859127493189557861323994576,
                 "issuer": "/C=US/O=Internet Security Research Group/CN=ISRG Root X1"
             }
         }
