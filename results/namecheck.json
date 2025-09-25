@@ -4,10 +4,10 @@
             "a.pivcac.prod.login.gov. 0 IN CNAME prod-pivcac-594195768.us-west-2.elb.amazonaws.com."
         ],
         [
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 34.218.100.119",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.10.25.166",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.41.197.16",
-            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.89.87.105"
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 34.211.187.189",
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 34.213.67.185",
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 35.80.234.240",
+            "prod-pivcac-594195768.us-west-2.elb.amazonaws.com. 0 IN A 52.25.79.189"
         ]
     ],
     "a.pivcac.staging.login.gov": [
@@ -15,10 +15,8 @@
             "a.pivcac.staging.login.gov. 0 IN CNAME staging-pivcac-2084686008.us-west-2.elb.amazonaws.com."
         ],
         [
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 35.163.128.71",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 35.80.237.157",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 44.234.202.217",
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.88.209.128"
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 34.215.82.234",
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.213.94.213"
         ]
     ]
 }
