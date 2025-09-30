@@ -43,14 +43,14 @@
         }
     },
     "login.gov": {
-        "expiration": "2025-10-30T11:02:27",
+        "expiration": "2025-12-29T11:02:09",
         "chain": {
             "/CN=login.gov": {
-                "serial": 480471909912467252048094131392187853749314,
-                "issuer": "/C=US/O=Let's Encrypt/CN=R11"
+                "serial": 494785250615920499860377057250983115396230,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R13"
             },
-            "/C=US/O=Let's Encrypt/CN=R11": {
-                "serial": 184083759606652600789093070426744763640,
+            "/C=US/O=Let's Encrypt/CN=R13": {
+                "serial": 119635429456979344322213464088047616773,
                 "issuer": "/C=US/O=Internet Security Research Group/CN=ISRG Root X1"
             }
         }
@@ -90,14 +90,14 @@
         }
     },
     "www.login.gov": {
-        "expiration": "2025-10-30T11:02:27",
+        "expiration": "2025-12-29T11:02:09",
         "chain": {
             "/CN=login.gov": {
-                "serial": 480471909912467252048094131392187853749314,
-                "issuer": "/C=US/O=Let's Encrypt/CN=R11"
+                "serial": 494785250615920499860377057250983115396230,
+                "issuer": "/C=US/O=Let's Encrypt/CN=R13"
             },
-            "/C=US/O=Let's Encrypt/CN=R11": {
-                "serial": 184083759606652600789093070426744763640,
+            "/C=US/O=Let's Encrypt/CN=R13": {
+                "serial": 119635429456979344322213464088047616773,
                 "issuer": "/C=US/O=Internet Security Research Group/CN=ISRG Root X1"
             }
         }
