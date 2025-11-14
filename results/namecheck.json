@@ -15,7 +15,7 @@
             "a.pivcac.staging.login.gov. 0 IN CNAME staging-pivcac-2084686008.us-west-2.elb.amazonaws.com."
         ],
         [
-            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 34.209.229.67",
+            "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 35.155.161.101",
             "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 44.237.137.153",
             "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 52.11.23.110",
             "staging-pivcac-2084686008.us-west-2.elb.amazonaws.com. 0 IN A 54.203.128.173"
