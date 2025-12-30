@@ -4,8 +4,8 @@ name: Global Cheese Positioning System
 on:
   push:
   pull_request:
-  schedule:
-    - cron: "15 * * * *"
+  #schedule:
+  #  - cron: "15 * * * *"
 
 env:
   # Arguments for checks should be set here and are public
